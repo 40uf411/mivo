@@ -1,0 +1,580 @@
+*, body
+    direction: rtl !important
+    text-align: right !important
+hr
+    height: 1px
+.transparent-bg
+    background: rgba(0, 0, 0, .2)
+
+.no-shadow
+    box-shadow: none !important
+    text-shadow: none !important
+#the-whole
+    transition: all .5s linear
+    &.active
+        filter: blur(25px)
+.navbar
+    box-shadow: 0 0.5rem 4rem rgba(0,0,0,.11), 0 10px 20px rgba(0,0,0,.05), 0 2px 3px rgba(0,0,0,.06)
+    font-family: Raleway
+    .nav-item
+        &.active
+            font-weight: bold
+            a
+                color: #2f8aea
+    #global-search
+        background: rgba(0, 123, 255, 0.47)
+        border-color: rgba(0, 123, 255, 0)
+        position: relative
+        //width: 400px !important
+        &::-webkit-input-placeholder 
+            color: #fff !important
+        @media(min-width: 760px)
+            right: 150px
+    .dropdown-menu
+        width: 350px
+
+.main-container
+    padding: 0 5rem 
+    .main-row 
+        padding: 1rem
+        padding-right: 0px
+        padding-left: 0px
+        border: 1px solid hsla(211, 59%, 88%, 0.51)
+        border-width: 0 1px 1px
+        border-radius: .525rem
+        #content-side
+            padding-right: 0
+            padding-left: 0
+        .profile-card
+            filter: grayscale(1)
+            .avatar
+                top: 130px
+                left: 50%
+                transform: translateX(-50%)
+                position: absolute
+                height: 130px
+                width: 130px
+                overflow: hidden
+                border-radius: 50%
+                background: #fff
+                box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1)
+                img
+                    height: 130px
+                    width: 130px
+                    position: relative
+                    border-radius: 50%
+
+        .items-list
+            .item
+                border-radius: .525rem
+                padding: 7px
+                margin-bottom: 7px
+                transition: all .3s linear
+                &:hover
+                    background: #eeeeee
+                .poster
+                    height: 109px
+                    width: 74px
+                    border-radius: .525rem
+
+            .user
+                border-radius: .525rem
+                padding: 7px
+                h5
+                    font-weight: bold
+                .profile
+                    height: 73px
+                    width: 73px
+                    position: relative
+                    overflow: hidden
+                    border-radius: 43%
+                    img
+                        height: 73px
+                        position: relative
+                        left: 50%
+                
+                transition: all .3s linear
+                &:hover
+                    background: #eeeeee
+                    
+
+        .intro-card
+            margin-right: 15px
+            margin-left: 15px
+            max-height: 550px
+            overflow: hidden
+            .card-img
+                position: relative
+                left: 0
+                right: 0
+                // transform: translateY(-5%)
+                //transform: translateY(-50%)
+            .card-img-overlay
+                background: linear-gradient(to top, rgba(48, 207, 208, 0.25) 0%, #330867 100%)
+                .context
+                    position: absolute
+                    bottom: 0
+                    h1
+                        font-weight: bold
+                        color: #000
+                        text-shadow: 0 0 5px #333
+                    .card-text
+                        color: #000
+                        text-shadow: 0 0 5px #333
+                        font-size: 20px
+                        padding: 20px
+                        padding-right: 0
+                        max-height: 135px
+                        word-break: break-word
+                        overflow-wrap: break-word
+                        overflow: hidden
+                        flex-wrap: wrap
+                    .card-year
+                        position: relative
+                        width: fit-content
+                        background: #000
+                        color: #fff
+                        padding: 6px
+                        border-radius: .525rem
+                        font-weight: bold
+                        box-shadow: 0 3px 10px -2px #000
+                        display: inline-block
+                        margin-right: 7px
+
+        .feed-intro
+            padding: 150px 0
+            background-size: 100%
+            h1, h4 
+                font-family: Raleway
+                text-align: center !important
+                font-weight: bold
+            h4
+                font-weight: 300
+#slider
+    background: rgba(238, 238, 238, 0.2901960784313726)
+    padding: 25px
+    border-radius: .525rem
+    .lSSlideOuter .lSPager.lSpg
+        text-align: center !important
+    .lightSlider
+
+        li
+            padding: 20px
+            margin-bottom: 35px    
+            background-color: #fff
+            border: none
+            border-radius: .625rem
+            box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1)
+.is-movie
+        cursor: pointer
+.a_section
+    margin-right: 15px
+    margin-left: 15px
+    &.without-margin
+        margin-right: 0px
+        margin-left: 0px
+    >h2
+        font-weight: bold
+        text-transform: uppercase
+        font-family: "Raleway"
+        letter-spacing: 2px
+    .is-movie.with_effect
+        transition: opacity 0.35s, transform 0.35s
+        //background: #3085a3
+        text-align: center
+        overflow: hidden
+        min-width: 304px
+        &::before
+            z-index: 5
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%)
+            background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%)
+            content: ''
+            opacity: 0
+            -webkit-transform: translate3d(0,50%,0)
+            transform: translate3d(0,50%,0)
+            transition: opacity 0.35s, transform 0.35s
+        .card-img-top.poster
+            z-index: 4
+            height: 432px
+            position: relative
+            display: block
+            max-width: 100%
+            opacity: 0.9
+            filter: blur(0px)
+            transition: opacity 1s, transform 0.35s
+        .card-body
+            padding: 0
+            h2
+                z-index: 7
+                position: absolute
+                text-align: center !important
+                top: 50%
+                left: 0
+                width: 100%
+                color: #f5f6f6
+                -webkit-transition: -webkit-transform 0.35s, color 0.35s
+                transition: transform 0.35s, color 0.35s
+                -webkit-transform: translate3d(0, -50%, 0)
+                transform: translate3d(0, -50%, 0)
+                transition: opacity 0.35s, transform 0.35s
+                font-family: 'Raleway', sans-serif
+                font-weight: 300
+                font-size: 30px
+                text-transform: uppercase
+                opacity: 0
+                span
+                    font-weight: 800
+            p
+                z-index: 7
+                color: #ffffff
+                position: absolute
+                bottom: 0
+                left: 0
+                padding: 2em
+                width: 100%
+                opacity: 0
+                -webkit-transform: translate3d(0, 10px, 0)
+                transform: translate3d(0, 10px, 0)
+                display: inline-block
+                word-wrap: break-word
+                overflow: hidden
+                max-height: 9.6em
+                line-height: 1.5em
+                text-align: justify !important
+                transition: opacity 0.35s, transform 0.35s
+                &::after
+                    content: "..."
+                    position: absolute
+                    right: -12px 
+                    bottom: 4px
+        &:hover
+            &::before
+                opacity: 1
+                -webkit-transform: translate3d(0,0,0)
+                transform: translate3d(0,0,0)
+            .card-img-top.poster
+                filter: blur(5px)
+            .card-body
+                h2
+                    color: #fff
+                    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0)
+                    transform: translate3d(0,-50%,0) translate3d(0,-40px,0)
+                    opacity: 1
+                p
+                    opacity: 1
+                    -webkit-transform: translate3d(0,-45px,0)
+                    transform: translate3d(0,-45px,0)
+
+    &.special
+        background-size: 100% !important
+        color: #fff
+        h2
+            color: #fff
+        &.card
+            .card-deck
+                opacity: .8
+                .card
+                    .card-img-top
+                        height: 300px
+                    .card-footer
+                        color: #5a6169
+
+    #is-user
+        .card-img-top
+            width: 295.625px
+            height: 295.625px
+.profile-page
+    .profile-area
+        position: relative
+        overflow: hidden
+        .background-area
+            height: 400px
+            overflow: hidden
+            img
+                width: 100%
+                position: relative
+                top: 50%
+                transform: translateY(-50%)
+        .profile-pic
+            z-index: 160
+            position: absolute
+            bottom: 33px
+            right: 50%
+            transform: translateX(50%)
+            height: 200px
+            background: #fff
+            border: 1px solid #87c1ff
+            border-radius: 50%
+            box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1)
+        .info-area
+            font-family: Raleway
+            background-color: rgba(90,97,105,.06)
+            padding: 10px 20px
+            font-size: 24px
+            z-index: 150
+            box-shadow: 0 -4px 70px 13px black
+            p
+                display: inline
+                b
+                    font-weight: bold
+            .fnf
+                display: inline
+                float: left
+    .profile
+        
+        .basic-info
+            padding: 15px
+            h2
+                font-family: Raleway
+                margin-bottom: 0px
+                text-align: center !important
+            p
+                text-align: left !important
+                margin: 0
+                margin-bottom: 5px
+                b
+                    font-weight: bold
+
+        .stats-info
+            padding: 15px
+            h2
+                font-family: Raleway
+                margin-bottom: 0px
+                text-align: center !important
+            p
+                text-align: left !important
+                margin: 0
+                margin-bottom: 5px
+                b
+                    font-weight: bold
+
+.mic-running-countdown
+    &:after
+        content: ":Say what you think"
+        position: absolute
+        top: 0
+        left: -311px
+        width: 302px
+        z-index: 15
+        font-size: 30px
+        color: black
+        font-weight: bold
+        padding: 10px
+        background: #fff
+        box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1)
+        border-radius: 0.525rem
+    z-index: 15
+    font-size: 30px
+    color: black
+    font-weight: bold
+    padding: 10px
+    background: #fff
+    position: fixed
+    top: 80px
+    left: -150px
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1)
+    border-radius: .525rem
+    transition: all .3s ease
+    &.active
+        left: 325px
+
+.rightclick-menu
+    font-family: Raleway
+    li
+        cursor: pointer
+        margin: 3px 0
+        padding: 7px
+        transition: all .3s ease
+        &.details-button
+            cursor: pointer
+        &.divider
+            margin: 0   
+            padding: 0
+            height: 1px
+            width: 100%
+            background: #cccccc
+        a
+            color: #666
+        &:hover
+            background: #eeeeee
+
+.jst-hours, .jst-minutes, .jst-seconds
+    display: inline
+
+.tt-hint
+    right: 150px !important 
+    left: auto !important
+.tt-menu
+    z-index: 1000
+    position: relative
+    right: 150px !important
+    top: 40px
+    min-width: 400px
+    padding: .5rem 0
+    margin: 0 0 0
+    font-size: 1rem
+    color: #5a6169
+    background-color: #fff
+    border: 1px solid rgba(0,0,0,.05)
+    border-radius: .375rem
+    box-shadow: 0 0.5rem 4rem rgba(0,0,0,.11), 0 10px 20px rgba(0,0,0,.05), 0 2px 3px rgba(0,0,0,.06)
+
+.tt-suggestion.tt-selectable
+    display: block
+    padding: 10px 20px
+    clear: both
+    font-weight: normal
+    line-height: 1.42857143
+    color: #333
+    white-space: nowrap
+    text-decoration: none
+    border-bottom: 1px solid #eee
+.tt-suggestion:last-of-type.tt-selectable
+    border-bottom: 0
+.tt-suggestion:hover.tt-selectable
+    color: #262626
+    text-decoration: none
+    background-color: #f5f5f5
+
+[class*=" icofont-"], [class^=icofont-]
+    margin: 0 5px
+#loged-in-dropdown
+    width: fit-content
+
+#movie-details-model
+    background: rgba(39, 39, 39, 0.7)
+    color: #fff
+    .modal-dialog
+        min-width: 70%
+        z-index: 90000
+        .intro-card
+            max-height: 350px
+            overflow: hidden
+            .card-img
+                position: relative
+                left: 0
+                right: 0
+                transform: translateY(-25%)
+            .card-img-overlay
+                background: linear-gradient(to top, rgba(251, 194, 235, .5) 0%, rgba(166, 193, 238, .5) 100%)
+                .context
+                    position: absolute
+                    bottom: 0
+                    height: 100%
+                    h1
+                        font-weight: bold
+                        color: #000
+                        text-shadow: 0 0 5px #333
+                        display: inline
+                        vertical-align: bottom
+                        span
+                            vertical-align: bottom
+
+                    img
+                        position: relative
+                        top: 50%
+                        transform: translateY(-50%)
+                        height: 90%
+                        margin-left: 30px
+                        border-radius: .352rem
+                        box-shadow: 0 21px 37px -9px #000
+
+    .info
+        color: #fff
+        .basic-info
+            padding: 15px
+            h2
+                color: #fff
+                font-family: Raleway
+                margin-bottom: 0px
+                text-align: center !important
+            p
+                text-align: left !important
+                margin: 0
+                margin-bottom: 5px
+                b
+                    font-weight: bold
+
+        .stats-info
+            padding: 15px
+            h2
+                color: #fff
+                font-family: Raleway
+                margin-bottom: 0px
+                text-align: center !important
+            p
+                text-align: left !important
+                margin: 0
+                margin-bottom: 5px
+                b
+                    font-weight: bold
+
+#model-close-button
+    z-index: 10000
+    display: none
+    position: fixed
+    background: rgba(255, 255, 255, 0.9)
+    top: 30px
+    right: 30px
+    padding: 13px
+    border-radius: 50%
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1)
+    transition: all .2s linear
+    &:hover
+        background: rgba(255, 59, 48, .9)
+    img
+        height: 25px
+#notification
+    position: fixed
+    top: -100px
+    left: 50%
+    transform: translateX(-50%)
+    background: rgba(255, 255, 255, 0.95)
+    box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1)
+    padding: 10px 20px
+    border-radius: 30px
+    font-family: Raleway
+    vertical-align: middle
+    z-index: 10000
+    transition: all 0.6s cubic-bezier(.68,-0.55,.27,1.55)
+    &.active
+        top: 25px
+    .notification-message
+        strong
+            color: #1adba2
+            font-weight: bold
+            vertical-align: middle
+            &.red-text
+                color: #c4183c
+
+#mic-record-for-emo
+    z-index: 1000
+    position: fixed
+    bottom: 30px
+    right: 30px
+    background: #fff
+    padding: 5px
+    border: 1px solid #4e3787
+    border-radius: 50%
+    cursor: pointer
+    box-shadow: 0 3px 20px 1px #4e3787
+    transition: all .2s ease
+    &:hover
+        box-shadow: 0 7px 25px 10px #4e3787
+    img
+        height: 50px
+        width: 50px    
+@keyframes  poster_effect
+    0%
+        transform: translateY(-25%)
+    25%
+        transform: translateY(0%)
+    75%
+        transform: translateY(-50%)
+    100% 
+        transform: translateY(-25%)

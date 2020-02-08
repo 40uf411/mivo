@@ -1,0 +1,10 @@
+{
+    "require": {
+        "symfony/var-dumper": "^4.1",
+        "twig/twig": "^2.5",
+        "phpunit/phpunit": "^7.3",
+        "fzaninotto/faker": "^1.8",
+        "filp/whoops": "^2.2",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

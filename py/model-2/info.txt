@@ -1,0 +1,4 @@
+this model can recognize:
+ - words spelled
+ - emotion level
+ - gender

@@ -1,0 +1,10 @@
+{
+    "status": "ok",
+    "msg": "file recieved",
+    "reco": "[\"<s>\", \"<sil>\", \"go\", \"forward\", \"ten\", \"meters\", \"<\/s>\"]",
+    "result": {
+        "emotion": [0],
+        "gender": -1,
+        "context": -1
+    }
+}
